@@ -9,9 +9,10 @@ app.use(json());
 
 app.post('/somainversos', (req, res) => {
   const {number1, number2} = req.body;
+  console.log(number1);
   let soma=(1/number1)+(1/number2);
-
-  res.status(200).send(soma);
+  console.log(soma);
+  res.send(`${soma}`);
 });
 
 app.get('/status', (req, res) => {
