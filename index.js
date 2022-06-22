@@ -11,7 +11,7 @@ app.post('/somainversos', (req, res) => {
   const {number1, number2} = req.body;
   let soma=(1/number1)+(1/number2);
 
-  res.status(201).send(soma);
+  res.status(200).send(soma);
 });
 
 app.get('/status', (req, res) => {
